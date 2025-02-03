@@ -1,0 +1,87 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Fixed navigation bar */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+/* Change background color on scroll */
+nav.scrolled {
+    background-color: #444;
+}
+
+/* Navigation menu structure */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Navigation links styling */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 15px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* New bright hover effect on menu items */
+nav ul li a:hover {
+    color: #000000; /* Black text for more contrast */
+    background-color: #ff4500; /* Bright Orange-Red background */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Section styling */
+section {
+    padding: 100px 20px;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+/* Section colors */
+#home { background-color: #659098; }
+#about { background-color: #a66c6a; }
+#services { background-color: #94c09b; }
+#contact { background-color: #d49cbf; }
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+}
